@@ -1,0 +1,50 @@
+    body{
+        margin: 0;
+        background-color: rgb(185, 155, 212);
+    }
+
+    .principal {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .jogo {
+        display: grid;
+        grid-template-areas: "verde vermelho"
+        "amarelo azul";
+        grid-gap: 10px;
+        border: 1px solid #fff;
+        background-color: #fff;
+        border-radius: 100%;
+        width: 600px;
+        height: 600px;
+    }
+
+    .azul {
+        background-color: blue;
+        grid-area: azul;
+        border-bottom-right-radius: 100%;
+    }
+
+    .amarelo {
+        background-color: yellow;
+        grid-area: amarelo;
+        border-bottom-left-radius: 100%;
+    }
+    .verde {
+        background-color: green;
+        grid-area: verde;
+        border-top-left-radius: 100%;
+    }
+    .vermelho {
+        background-color: red;
+        grid-area: vermelho;
+        border-top-right-radius: 100%;
+    }
+
+    .selecionado {
+        opacity: 0.6;
+    }
